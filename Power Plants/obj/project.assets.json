@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\SpilTEK\\Læringsteknologi\\Læringsteknologi projekt\\Power Plants\\Power Plants.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\SpilTEK\\Læringsteknologi\\Læringsteknologi projekt\\PowerPlants\\Power Plants\\Power Plants.csproj",
       "projectName": "Power Plants",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\SpilTEK\\Læringsteknologi\\Læringsteknologi projekt\\Power Plants\\Power Plants.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\SpilTEK\\Læringsteknologi\\Læringsteknologi projekt\\PowerPlants\\Power Plants\\Power Plants.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\SpilTEK\\Læringsteknologi\\Læringsteknologi projekt\\Power Plants\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\SpilTEK\\Læringsteknologi\\Læringsteknologi projekt\\PowerPlants\\Power Plants\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
