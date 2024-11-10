@@ -1,0 +1,10 @@
+.button{
+    color: blue;
+    shape-margin: 100%;
+    size: 30%;
+}
+
+a .button.seedLink{
+    background-image: url("Images/Moodboard-Design etc/Skitser/Plant-ideas.webp");
+    size: 50px;
+}
