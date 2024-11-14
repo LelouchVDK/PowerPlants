@@ -1,10 +1,27 @@
 .button{
-    color: blue;
-    shape-margin: 100%;
-    size: 30%;
+    color: pink;
+    shape-margin: 10%;
+    size: 30px;
 }
 
-a .button.seedLink{
+body a .button.seedLink{
     background-image: url("Images/Moodboard-Design etc/Skitser/Plant-ideas.webp");
+    background-size: auto;
     size: 50px;
+    left: 0%;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+body a .button.wellLink{
+    background-image: url("Images/Moodboard-Design etc/Skitser/Plant-ideas.webp");
+    background-size: auto;
+    size: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    border-radius: 50%;
+    padding: 20px;
 }
