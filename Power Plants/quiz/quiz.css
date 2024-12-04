@@ -1,0 +1,32 @@
+.quizWindow {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: small;
+}
+
+#option1{
+    background-color: blueviolet;
+    font-size: 50px;
+}
+
+#option2{
+    background-color: blueviolet;
+    font-size: 50px;
+}
+
+#option3{
+    background-color: blueviolet;
+    font-size: 50px;
+}
+
+#option4{
+    background-color: blueviolet;
+    font-size: 50px;
+}
+
+body {
+    text-align: center;
+    background-color: burlywood;
+    font-size: 50px;
+}
