@@ -1,6 +1,7 @@
 html {
-    background-image: url("ui_example.png");
+    background-image: url("Pottebla_LT.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 header {
 
@@ -25,10 +26,40 @@ div.points{
     flex-grow: 1;
 }
 
-div.PlantName{
+div.points p{
+    margin: 0;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+div.plantName{
    flex-grow: 1;
 }
 
-div.Subject{
+div.subject{
     flex-grow: 1;
+}
+
+button.watering{
+    border: 3px solid midnightblue;
+    background-color: lightskyblue;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    top: 40%;
+    right: 25%;
+    margin: 4px 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 40px;
+    color: midnightblue;
+}
+
+button.watering:hover{
+    background-color: midnightblue;
+    color: lightskyblue;
 }
