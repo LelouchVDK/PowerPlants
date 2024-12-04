@@ -4,24 +4,34 @@
     size: 30px;
 }
 
-body a .button.LeftLink{
-    background-image: url("Images/Moodboard-Design etc/Skitser/Plant-ideas.webp");
-    background-size: auto;
-    size: 50px;
-    left: 0%;
+body a .button{
+    border: 3px solid forestgreen;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
     position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
     top: 50%;
+    margin: 4px 2px;
     border-radius: 50%;
-    padding: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+body a .button:hover{
+    background-color: forestgreen;
+    color: white;
 }
 
 body a .button.RightLink{
-    background-image: url("Images/Moodboard-Design etc/Skitser/Plant-ideas.webp");
-    background-size: auto;
-    size: 50px;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    border-radius: 50%;
-    padding: 20px;
+    right: 1%;
 }
+
+body a .button.LeftLink{
+    left: 1%;
+}
+
