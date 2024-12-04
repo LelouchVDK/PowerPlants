@@ -49,8 +49,8 @@ button.watering{
     height: 100px;
     text-align: center;
     display: inline-block;
-    top: 40%;
-    right: 25%;
+    top: 50%;
+    right: 30%;
     margin: 4px 2px;
     border-radius: 50%;
     cursor: pointer;
