@@ -7,8 +7,9 @@
 body a .button{
     border: 3px solid forestgreen;
     background-color: transparent;
-    font-size: 20px;
-    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
     position: absolute;
     width: 60px;
     height: 60px;
