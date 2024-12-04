@@ -4,7 +4,7 @@
     size: 30px;
 }
 
-body a .button.seedLink{
+body a .button.LeftLink{
     background-image: url("Images/Moodboard-Design etc/Skitser/Plant-ideas.webp");
     background-size: auto;
     size: 50px;
@@ -15,7 +15,7 @@ body a .button.seedLink{
     padding: 20px;
 }
 
-body a .button.wellLink{
+body a .button.RightLink{
     background-image: url("Images/Moodboard-Design etc/Skitser/Plant-ideas.webp");
     background-size: auto;
     size: 50px;
