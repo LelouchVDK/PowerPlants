@@ -1,44 +1,8 @@
 html {
-    background-image: url("Pottebla_LT.jpg");
+    background: url("Pottebla_LT.jpg");
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-}
-header {
-
-    height: 120px;
-    /*background: #3b3b3b;*/
-    background: #3b3b3b;
-    color: white;
-    border: none;
-    width: auto;
-    margin: 0 auto;
-}
-
-nav {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 35px;
-    font-weight: bold;
-    display: flex;
-}
-
-div.points{
-    flex-grow: 1;
-}
-
-div.points p{
-    margin: 0;
-    display: inline-block;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
-div.plantName{
-   flex-grow: 1;
-}
-
-div.subject{
-    flex-grow: 1;
 }
 
 button.watering{

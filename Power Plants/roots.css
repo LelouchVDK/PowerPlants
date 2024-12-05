@@ -1,3 +1,57 @@
+header {
+
+    height: 120px;
+    background: transparent;
+    color: black;
+    border: none;
+    width: auto;
+    margin: 0 auto;
+}
+
+nav {
+    border: 6px solid darkgreen;
+    border-radius: 10px;
+    background-color: darkseagreen;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+}
+
+div.points{
+    flex-grow: 1;
+}
+
+div.points p{
+    margin: 0;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+div.plantName{
+    flex-grow: 1;
+}
+
+div.plantName p{
+    margin: 0;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+div.subject{
+    flex-grow: 1;
+}
+
+div.subject p{
+    margin: 0;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
 .button{
     color: pink;
     shape-margin: 10%;
