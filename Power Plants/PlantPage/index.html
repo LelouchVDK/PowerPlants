@@ -14,7 +14,7 @@
     <header>
         <nav>
             <div class="points">
-                <p>Point: </p>
+                <p>Vand: </p>
                 <p id="currentPoints">00</p>
             </div>
             <div class="plantName">
@@ -28,11 +28,17 @@
         </nav>
     </header>
     
-    <div>
-        <button class="watering"><i class="fa-solid fa-droplet"></i></button>
+    <div class="plants">
+        <img src="../Images/Plants/Krukke.png">
     </div>
     
-    <div>
+    <div class="progressBar">
+        <label for="plantProgress">Growth progress:</label>
+        <progress id="plantProgress" value="2" max="3"></progress>
+    </div>
+    
+    <div class="buttons">
+        <button class="watering"><i class="fa-solid fa-droplet"></i></button>
         <button class="placePlant"><i class="fa-solid fa-seedling"></i></button>
     </div>
     
