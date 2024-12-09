@@ -15,7 +15,7 @@
         <nav>
             <div class="points">
                 <p>Vand: </p>
-                <p id="currentPoints">00</p>
+                <p id="currentPoints">0</p>
             </div>
             <div class="plantName">
                 <p>Plante Navn: </p>
@@ -29,17 +29,22 @@
     </header>
     
     <div class="plants">
-        <img src="../Images/Plants/Krukke.png">
+        <img id="plantImage" src="../Images/Plants/Krukke.png">
     </div>
     
     <div class="progressBar">
         <label for="plantProgress">Growth progress:</label>
-        <progress id="plantProgress" value="2" max="3"></progress>
+        <progress id="plantProgress" value="0" max="3"></progress>
     </div>
     
     <div class="buttons">
-        <button class="watering"><i class="fa-solid fa-droplet"></i></button>
-        <button class="placePlant"><i class="fa-solid fa-seedling"></i></button>
+        <button class="watering" onclick="waterPlant()"><i class="fa-solid fa-droplet"></i></button>
+        
+        <button class="placePlant" onclick="changeImage()"><i class="fa-solid fa-seedling"></i></button>
+        <select class="subjectSelector" id="imageSelector">
+            <option value="../Images/Plants/cactus_1.png">Mennesket</option>
+            <option value="../Images/Plants/amaryllis_1.png">Sol Systemet</option>
+        </select>
     </div>
     
     <a href="../Well/Well.html">
@@ -48,5 +53,48 @@
     <a href="../Garden/Garden.html">
         <button class="button RightLink"><i class="fa-solid fa-arrow-right"></i></button>
     </a>
+    
+    
+    
+    <script>
+        function changeImage() {
+            var image = document.getElementById('plantImage');
+            var selector = document.getElementById('imageSelector');
+            image.src = selector.value;
+            var plantName = document.getElementById('currentPlant');
+            var subject = document.getElementById('currentSubject');
+            if (selector.value == "../Images/Plants/cactus_1.png") {
+                plantName.innerHTML = "Kaktus";
+                subject.innerHTML = "Mennesket";
+            } else {
+                plantName.innerHTML = "Amaryllis";
+                subject.innerHTML = "Sol Systemet";
+            }
+        }
+        
+        function waterPlant() {
+            var image = document.getElementById('plantImage');
+            var progress = document.getElementById('plantProgress');
+            var points = document.getElementById('currentPoints');
+            var currentPoints = parseInt(points.innerHTML);
+            var currentProgress = parseInt(progress.value);
+            var currentImage = image.attributes.src.value;
+            if ((currentImage !== "../Images/Plants/Krukke.png")     
+                && currentPoints > 0 && currentProgress < 3) {
+                currentProgress++;
+                currentPoints--;
+                progress.value = currentProgress; 
+                points.innerHTML = currentPoints;
+            }
+            else if (currentProgress == 3) 
+            {
+                alert("Planten er fuldt vokset og kan nu plantes i drivhuset");
+            }
+            else {
+                alert("Du har ikke nok vand eller planten er ikke plantet");
+            }
+        }
+    </script>
+    
     </body>
 </html>
