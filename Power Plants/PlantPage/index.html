@@ -58,6 +58,10 @@
     
     <script>
         function changeImage() {
+            var progress = document.getElementById('plantProgress');
+            var currentProgress = parseInt(progress.value);
+            var points = document.getElementById('currentPoints');
+            var currentPoints = parseInt(points.innerHTML);
             var image = document.getElementById('plantImage');
             var selector = document.getElementById('imageSelector');
             image.src = selector.value;
@@ -70,6 +74,10 @@
                 plantName.innerHTML = "Amaryllis";
                 subject.innerHTML = "Sol Systemet";
             }
+            currentProgress = 0;
+            currentPoints = 0;
+            progress.value = currentProgress;
+            points.innerHTML = currentPoints;
         }
         
         function waterPlant() {
@@ -82,6 +90,18 @@
             if ((currentImage !== "../Images/Plants/Krukke.png")     
                 && currentPoints > 0 && currentProgress < 3) {
                 currentProgress++;
+                if (currentProgress === 1 && currentImage === "../Images/Plants/amaryllis_1.png") {
+                    image.src = "../Images/Plants/amaryllis_2.png";
+                }
+                else if (currentProgress === 3 && currentImage === "../Images/Plants/amaryllis_2.png") {
+                    image.src = "../Images/Plants/amaryllis_3.png";
+                }
+                else if (currentProgress === 1 && currentImage === "../Images/Plants/cactus_1.png") {
+                    image.src = "../Images/Plants/cactus_2.png";
+                }
+                else if (currentProgress === 3 && currentImage === "../Images/Plants/cactus_2.png") {
+                    image.src = "../Images/Plants/cactus_3.png";
+                }
                 currentPoints--;
                 progress.value = currentProgress; 
                 points.innerHTML = currentPoints;
