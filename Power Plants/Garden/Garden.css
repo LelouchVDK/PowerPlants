@@ -11,3 +11,39 @@ body {
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 70px 70px;
 }
+#plant {
+    border: 3px solid midnightblue;
+    background-color: lightskyblue;
+    font-size: 25px;
+    font-weight: bold;
+    color: midnightblue;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    top: 50%;
+    right: 40%;
+    margin: 4px 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+#plant-remove {
+    border: 3px solid midnightblue;
+    background-color: lightskyblue;
+    font-size: 25px;
+    font-weight: bold;
+    color: midnightblue;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+    top: 50%;
+    right: 60%;
+    margin: 4px 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
