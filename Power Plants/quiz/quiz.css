@@ -1,4 +1,4 @@
-.quizWindow {
+#quizWindow {
     background-color: aquamarine;
     display: grid;
     grid-template-columns: auto auto;
