@@ -4,8 +4,10 @@ body {
 }
 .grid-container {
   display: grid;
-  height: 400px;
+  height: 200px;
+  margin-top: 300px;
+  margin-left: 410px;
   align-content: center;
-  grid-template-columns: auto auto auto;
-  justify-content: space-evenly;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto auto;
 }
