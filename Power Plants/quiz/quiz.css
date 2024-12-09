@@ -1,32 +1,37 @@
 #quizWindow {
-    background-color: aquamarine;
+    background-color: #709154;
     display: grid;
     grid-template-columns: auto auto;
     font-size: small;
+    padding: 1%;
+}
+
+#question {
+    font-family: 'Quicksand';
 }
 
 #option1{
-    background-color: blueviolet;
+    background-color: #88b166;
     font-size: 50px;
 }
 
 #option2{
-    background-color: blueviolet;
+    background-color: #88b166;
     font-size: 50px;
 }
 
 #option3{
-    background-color: blueviolet;
+    background-color: #88b166;
     font-size: 50px;
 }
 
 #option4{
-    background-color: blueviolet;
+    background-color: #88b166;
     font-size: 50px;
 }
 
 body {
     text-align: center;
-    background-color: burlywood;
+    background-color: lightskyblue;
     font-size: 50px;
 }
