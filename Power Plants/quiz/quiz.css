@@ -13,25 +13,25 @@
 #option1{
     background-color: #88b166;
     font-size: 50px;
-    border: 1%, solid black;
+    border: 1px solid black;
 }
 
 #option2{
     background-color: #88b166;
     font-size: 50px;
-    border: 1%, solid black;
+    border: 1px solid black;
 }
 
 #option3{
     background-color: #88b166;
     font-size: 50px;
-    border: 1%, solid black;
+    border: 1px solid black;
 }
 
 #option4{
     background-color: #88b166;
     font-size: 50px;
-    border: 1%, solid, black;
+    border: 1px solid black;
 }
 
 body {
@@ -39,3 +39,9 @@ body {
     background-color: lightskyblue;
     font-size: 50px;
 }
+
+/* Was an attempt to make button anchor fit button size
+.a {
+    size: 21.2px;
+}
+*/

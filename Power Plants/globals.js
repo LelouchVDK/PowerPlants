@@ -3,4 +3,4 @@ let globals = {
     currentPlant: document.getElementById('currentPlant'),
     currentSubject: document.getElementById('currentSubject'),
     waterCount: 0
-}
+};
