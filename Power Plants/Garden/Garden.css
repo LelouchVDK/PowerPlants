@@ -13,7 +13,7 @@ body {
 }
 #plant {
     border: 3px solid midnightblue;
-    background-color: lightskyblue;
+    background-color: darkseagreen;
     font-size: 25px;
     font-weight: bold;
     color: midnightblue;
@@ -23,7 +23,7 @@ body {
     text-align: center;
     display: inline-block;
     top: 50%;
-    right: 40%;
+    right: 60%;
     margin: 4px 2px;
     border-radius: 50%;
     cursor: pointer;
@@ -41,7 +41,7 @@ body {
     text-align: center;
     display: inline-block;
     top: 50%;
-    right: 60%;
+    right: 40%;
     margin: 4px 2px;
     border-radius: 50%;
     cursor: pointer;
