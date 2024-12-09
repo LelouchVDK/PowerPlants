@@ -7,27 +7,31 @@
 }
 
 #question {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
 }
 
 #option1{
     background-color: #88b166;
     font-size: 50px;
+    border: 1%, solid black;
 }
 
 #option2{
     background-color: #88b166;
     font-size: 50px;
+    border: 1%, solid black;
 }
 
 #option3{
     background-color: #88b166;
     font-size: 50px;
+    border: 1%, solid black;
 }
 
 #option4{
     background-color: #88b166;
     font-size: 50px;
+    border: 1%, solid, black;
 }
 
 body {
