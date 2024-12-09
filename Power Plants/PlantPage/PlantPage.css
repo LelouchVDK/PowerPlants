@@ -1,12 +1,12 @@
 html {
-    background: url("Pottebla_LT.jpg");
+    background-color: rgb(146, 199, 206);
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 button.watering{
-    border: 3px solid midnightblue;
+    border: 4px solid midnightblue;
     background-color: lightskyblue;
     position: absolute;
     width: 100px;
@@ -26,4 +26,27 @@ button.watering{
 button.watering:hover{
     background-color: midnightblue;
     color: lightskyblue;
+}
+
+button.placePlant{
+    border: 4px solid #023020;
+    background-color: darkseagreen;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    top: 40%;
+    right: 50%;
+    margin: 4px 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 40px;
+    color: #023020;
+}
+
+button.placePlant:hover{
+    background-color: #023020;
+    color: darkseagreen;
 }
