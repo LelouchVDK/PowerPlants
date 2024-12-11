@@ -1,11 +1,10 @@
-const { globals } = require("../globals");
+import { globals } from "../globals";
 
 const Mennesket = new Map();
 /*{
     "What is the name for a true/false datatype" : {correct: "boolean", incorrect: ["arithmic", "logical", "checker"]},
     "Which language supports multiple inherintance (inherit from mulitple classes)" : {correct: "C++", incorrect: ["C#", "Java", "Swift"]}
 };*/
-
 
 
 Mennesket.set("Hvilket af disse stoffer bliver transporteret rundt i vores krop i vores blodkredsløb?", {correct: ["O2 (ilt)"], incorrect: ["Zink", "H2O", "Salt"], explanation: 'Et af blodkredsløbets vigtigste opgaver er at transportere O2 (Ilt) fra vores lunger ud i resten af kroppen. Det transporterer også andre ting som røde og hvide blodceller og hjælper kroppen med at komme af med CO2 (Kuldioxid).'});
@@ -63,7 +62,7 @@ function chosenAnswer(answer) {
 
     if (options[optionNum - 1] == correctAnswer) {
         document.getElementById('question').innerHTML = 'Correct. You get a bucket of water';
-        // window.location.href = '../Well/Well.html';
+        globals.waterCount++;
     } else {
         document.getElementById('question').innerHTML = 'Forkert. Surt show';
         // currentQIndex = Math.floor(Math.random() * QandA.size);
@@ -72,4 +71,4 @@ function chosenAnswer(answer) {
     document.getElementById('quizWindow').style.display = 'none';
     // document.getElementById('quizWindow').style.visibillity = 'hidden';
     document.getElementById('explanation').innerHTML = currentMap.get(currentQ).explanation;
-}
+};

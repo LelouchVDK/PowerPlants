@@ -5,4 +5,4 @@ let globals = {
     waterCount: 0
 };
 
-module.exports = {globals}
+export default { globals }
