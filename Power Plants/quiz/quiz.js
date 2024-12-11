@@ -1,15 +1,19 @@
-const Kroppen = new Map();
+const { globals } = require("../globals");
+
+const Mennesket = new Map();
 /*{
     "What is the name for a true/false datatype" : {correct: "boolean", incorrect: ["arithmic", "logical", "checker"]},
     "Which language supports multiple inherintance (inherit from mulitple classes)" : {correct: "C++", incorrect: ["C#", "Java", "Swift"]}
 };*/
 
-Kroppen.set("Hvilket af disse stoffer bliver transporteret rundt i vores krop i vores blodkredsløb?", {correct: ["O2 (ilt)"], incorrect: ["Zink", "H2O", "Salt"], explanation: 'Et af blodkredsløbets vigtigste opgaver er at transportere O2 (Ilt) fra vores lunger ud i resten af kroppen. Det transporterer også andre ting som røde og hvide blodceller og hjælper kroppen med at komme af med CO2 (Kuldioxid).'});
-Kroppen.set("Hvad består blodkredsløbet af?", {correct: ["Hjerte, blod og blodårer"], incorrect: ["Blod, lunger og nerver", "Hjerne, hjerte og nerver", "Blod, lunger og muskler"], explanation: 'Blodkredsløbet består af hjertet, blodet og blodårerne. Hjertet fungerer som kredsløbets pumpe, som pumper blodet rundt i kroppen gennem blodårerne.'});
-Kroppen.set("Hvilke to typer blodårer består vores blodkredsløb af?", {correct: ['Pulsårer og vener'], incorrect: ['Røde og blå blodårer', 'Blodårer og luftårer.', 'Nerver og vener'], explanation: 'Blodkredsløbets blodårer hedder pulsårer og vener. Pulsårerne fører blodet fra hjertet og rundt i kroppen og er ofte tegnet med rødt på modeller. Venerne transporterer blodet fra kroppen tilbage til hjertet og er ofte tegnet med blåt på modeller.'});
 
-const rummet = new Map();
-rummet.set('Hvor mange planeter er der i vores solsystem?', {correct: [8], incorrect: [7, 9, 10]});
+
+Mennesket.set("Hvilket af disse stoffer bliver transporteret rundt i vores krop i vores blodkredsløb?", {correct: ["O2 (ilt)"], incorrect: ["Zink", "H2O", "Salt"], explanation: 'Et af blodkredsløbets vigtigste opgaver er at transportere O2 (Ilt) fra vores lunger ud i resten af kroppen. Det transporterer også andre ting som røde og hvide blodceller og hjælper kroppen med at komme af med CO2 (Kuldioxid).'});
+Mennesket.set("Hvad består blodkredsløbet af?", {correct: ["Hjerte, blod og blodårer"], incorrect: ["Blod, lunger og nerver", "Hjerne, hjerte og nerver", "Blod, lunger og muskler"], explanation: 'Blodkredsløbet består af hjertet, blodet og blodårerne. Hjertet fungerer som kredsløbets pumpe, som pumper blodet rundt i kroppen gennem blodårerne.'});
+Mennesket.set("Hvilke to typer blodårer består vores blodkredsløb af?", {correct: ['Pulsårer og vener'], incorrect: ['Røde og blå blodårer', 'Blodårer og luftårer.', 'Nerver og vener'], explanation: 'Blodkredsløbets blodårer hedder pulsårer og vener. Pulsårerne fører blodet fra hjertet og rundt i kroppen og er ofte tegnet med rødt på modeller. Venerne transporterer blodet fra kroppen tilbage til hjertet og er ofte tegnet med blåt på modeller.'});
+
+const solsystemet = new Map();
+solsystemet.set('Hvor mange planeter er der i vores solsystem?', {correct: [8], incorrect: [7, 9, 10]});
 
 let currentMap;
 let currentQ;
@@ -23,11 +27,11 @@ function questionTopic(questionMap) {
     currentQIndex = Math.floor(Math.random() * currentMap.size);
     currentQ = Qs[currentQIndex];
 
-    let questionDisplay = document.getElementById("question").innerHTML = currentQ;
+    document.getElementById("question").innerHTML = currentQ;
 
 }
 
-questionTopic(Kroppen);
+questionTopic(Mennesket);
 
 options = currentMap.get(currentQ).correct.concat(currentMap.get(currentQ).incorrect);
 
