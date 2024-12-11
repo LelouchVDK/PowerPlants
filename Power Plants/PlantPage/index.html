@@ -12,49 +12,49 @@
         <title>Power Plants</title>
     </head>
     
-    <body>
-    <header>
-        <nav>
-            <div class="points">
-                <p>Vand: </p>
-                <p id="currentPoints" onload="getCurrentPoints()"></p>
-            </div>
-            <div class="plantName">
-                <p>Plante Navn: </p>
-                <p id="currentPlant" onload="getCurrentPlant()"></p>
-            </div>
-            <div class="subject">
-                <p>Emne: </p>
-                <p id="currentSubject" onload="getCurrentSubject()"></p>
-            </div>
-        </nav>
-    </header>
-    
-    <div class="plants">
-        <img id="plantImage" src="../Images/Plants/Krukke.png">
-    </div>
-    
-    <div class="progressBar">
-        <label for="plantProgress">Growth progress:</label>
-        <progress id="plantProgress" value="0" max="3"></progress>
-    </div>
-    
-    <div class="buttons">
-        <button class="watering" onclick="waterPlant()"><i class="fa-solid fa-droplet"></i></button>
+    <body onload="getCurrentPoints(); getCurrentPlant(); getCurrentSubject(); getPlantProgress(); getPlantImage()">
+        <header>
+            <nav>
+                <div class="points">
+                    <p>Vand: </p>
+                    <p id="currentPoints"></p>
+                </div>
+                <div class="plantName">
+                    <p>Plante Navn: </p>
+                    <p id="currentPlant"></p>
+                </div>
+                <div class="subject">
+                    <p>Emne: </p>
+                    <p id="currentSubject"></p>
+                </div>
+            </nav>
+        </header>
         
-        <button class="placePlant" onclick="changeImage()"><i class="fa-solid fa-seedling"></i></button>
-        <select class="subjectSelector" id="imageSelector">
-            <option value="../Images/Plants/cactus_1.png">Mennesket</option>
-            <option value="../Images/Plants/amaryllis_1.png">Sol Systemet</option>
-        </select>
-    </div>
-    
-    <a href="../Well/Well.html">
-        <button class="button LeftLink"><i class="fa-solid fa-arrow-left"></i></button>
-    </a>
-    <a href="../Garden/Garden.html">
-        <button class="button RightLink"><i class="fa-solid fa-arrow-right"></i></button>
-    </a>
+        <div class="plants">
+            <img id="plantImage" src="../Images/Plants/Krukke.png">
+        </div>
+        
+        <div class="progressBar">
+            <label for="plantProgress">Growth progress:</label>
+            <progress id="plantProgress" value="0" max="3"></progress>
+        </div>
+        
+        <div class="buttons">
+            <button class="watering" onclick="waterPlant()"><i class="fa-solid fa-droplet"></i></button>
+            
+            <button class="placePlant" onclick="changeImage()"><i class="fa-solid fa-seedling"></i></button>
+            <select class="subjectSelector" id="imageSelector">
+                <option value="../Images/Plants/cactus_1.png">Mennesket</option>
+                <option value="../Images/Plants/amaryllis_1.png">Sol Systemet</option>
+            </select>
+        </div>
+        
+        <a href="../Well/Well.html">
+            <button class="button LeftLink"><i class="fa-solid fa-arrow-left"></i></button>
+        </a>
+        <a href="../Garden/Garden.html">
+            <button class="button RightLink"><i class="fa-solid fa-arrow-right"></i></button>
+        </a>
     
     
     

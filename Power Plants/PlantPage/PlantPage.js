@@ -5,9 +5,9 @@
     var currentPoints = parseInt(points.innerHTML);
     var image = document.getElementById('plantImage');
     var selector = document.getElementById('imageSelector');
-    image.src = selector.value;
+    setPlantImage(selector.value);
 
-    if (selector.value == "../Images/Plants/cactus_1.png") {
+    if (selector.value === "../Images/Plants/cactus_1.png") {
         setCurrentPlant("Kaktus");
         setCurrentSubject("Mennesket");
     } else {
@@ -15,9 +15,9 @@
         setCurrentSubject("Sol Systemet");
     }
     currentProgress = 0;
-    currentPoints = 0;
-    progress.value = currentProgress;
-    points.innerHTML = currentPoints;
+    currentPoints = 4;
+    setPlantProgress(currentProgress);
+    setCurrentPoints(currentPoints);
 }
 
 
@@ -44,8 +44,8 @@ function waterPlant() {
             image.src = "../Images/Plants/cactus_3.png";
         }
         currentPoints--;
-        progress.value = currentProgress;
-        points.innerHTML = currentPoints;
+        setPlantProgress(currentProgress);
+        setCurrentPoints(currentPoints);
     }
     else if (currentProgress == 3)
     {
