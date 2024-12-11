@@ -1,5 +1,10 @@
 function getCurrentPoints(){
-    document.getElementById('currentPoints').innerHTML = localStorage.getItem('currentPoints');
+    if (localStorage.getItem('currentPoints') === null){
+        localStorage.setItem('currentPoints', 0);
+    }
+    else{
+        document.getElementById('currentPoints').innerHTML = localStorage.getItem('currentPoints');
+    }
  }
  
  function setCurrentPoints(points){
@@ -35,7 +40,12 @@ function setPlantProgress(progress){
 }
 
 function getPlantImage(){
-    document.getElementById('plantImage').src = localStorage.getItem('plantImage');
+    if (localStorage.getItem('plantImage') === null){
+        localStorage.setItem('plantImage', '../Images/Plants/Krukke.png');
+    }
+    else{
+        document.getElementById('plantImage').src = localStorage.getItem('plantImage');
+    }
 }
 
 function setPlantImage(image){

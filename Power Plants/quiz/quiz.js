@@ -51,11 +51,10 @@ function chosenAnswer(answer) {
 
     if (options[optionNum - 1] == correctAnswer) {
         document.getElementById('question').innerHTML = 'Correct. You get a bucket of water';
-        globals.currentPoints++;
+        setCurrentPoints(parseInt(localStorage.getItem('currentPoints')) + 1);
     } else {
         document.getElementById('question').innerHTML = 'Forkert. Surt show';
     }
-
     document.getElementById('quizWindow').style.display = 'none';
     document.getElementById('explanation').innerHTML = currentMap.get(currentQ).explanation;
-};
+}
