@@ -8,34 +8,38 @@
 
 #question {
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 #option1{
     background-color: #88b166;
     font-size: 50px;
+    text-align: center;
     border: 1px solid black;
 }
 
 #option2{
     background-color: #88b166;
     font-size: 50px;
+    text-align: center;
     border: 1px solid black;
 }
 
 #option3{
     background-color: #88b166;
     font-size: 50px;
+    text-align: center;
     border: 1px solid black;
 }
 
 #option4{
     background-color: #88b166;
     font-size: 50px;
+    text-align: center;
     border: 1px solid black;
 }
 
 body {
-    text-align: center;
     background-color: lightskyblue;
     font-size: 50px;
 }
