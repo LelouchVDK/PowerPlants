@@ -6,14 +6,13 @@
     var image = document.getElementById('plantImage');
     var selector = document.getElementById('imageSelector');
     image.src = selector.value;
-    var plantName = document.getElementById('currentPlant');
-    var subject = document.getElementById('currentSubject');
+
     if (selector.value == "../Images/Plants/cactus_1.png") {
-        plantName.innerHTML = "Kaktus";
-        subject.innerHTML = "Mennesket";
+        setCurrentPlant("Kaktus");
+        setCurrentSubject("Mennesket");
     } else {
-        plantName.innerHTML = "Amaryllis";
-        subject.innerHTML = "Sol Systemet";
+        setCurrentPlant("Amaryllis");
+        setCurrentSubject("Sol Systemet");
     }
     currentProgress = 0;
     currentPoints = 0;

@@ -55,3 +55,31 @@ body {
     background-color: midnightblue;
     color: lightskyblue;
 }
+select.plantSelector{
+    text-align: center;
+    position: absolute;
+    width: 140px;
+    top: 46.5%;
+    right: 59%;
+    border: 4px solid #023020;
+    border-radius: 10px;
+    background-color: darkseagreen;
+    font-weight: bold;
+    font-size: 17px;
+    
+    
+}
+select.removeSelector{
+    text-align: center;
+    position: absolute;
+    width: 140px;
+    top: 46.5%;
+    right: 39%;
+    border: 4px solid #023020;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    font-weight: bold;
+    font-size: 17px;
+    
+    
+}
