@@ -51,7 +51,7 @@ function chosenAnswer(answer) {
 
     if (options[optionNum - 1] == correctAnswer) {
         document.getElementById('question').innerHTML = 'Correct. You get a bucket of water';
-        globals.waterCount++;
+        globals.currentPoints++;
     } else {
         document.getElementById('question').innerHTML = 'Forkert. Surt show';
     }
