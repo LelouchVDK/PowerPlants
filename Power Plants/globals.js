@@ -4,5 +4,3 @@ let globals = {
     currentSubject: document.getElementById('currentSubject'),
     waterCount: 0
 };
-
-export default { globals }

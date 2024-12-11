@@ -1,11 +1,10 @@
-import { globals } from "../globals";
+// import { globals } from "../globals";
 
 const Mennesket = new Map();
 /*{
     "What is the name for a true/false datatype" : {correct: "boolean", incorrect: ["arithmic", "logical", "checker"]},
     "Which language supports multiple inherintance (inherit from mulitple classes)" : {correct: "C++", incorrect: ["C#", "Java", "Swift"]}
 };*/
-
 
 Mennesket.set("Hvilket af disse stoffer bliver transporteret rundt i vores krop i vores blodkredsløb?", {correct: ["O2 (ilt)"], incorrect: ["Zink", "H2O", "Salt"], explanation: 'Et af blodkredsløbets vigtigste opgaver er at transportere O2 (Ilt) fra vores lunger ud i resten af kroppen. Det transporterer også andre ting som røde og hvide blodceller og hjælper kroppen med at komme af med CO2 (Kuldioxid).'});
 Mennesket.set("Hvad består blodkredsløbet af?", {correct: ["Hjerte, blod og blodårer"], incorrect: ["Blod, lunger og nerver", "Hjerne, hjerte og nerver", "Blod, lunger og muskler"], explanation: 'Blodkredsløbet består af hjertet, blodet og blodårerne. Hjertet fungerer som kredsløbets pumpe, som pumper blodet rundt i kroppen gennem blodårerne.'});
