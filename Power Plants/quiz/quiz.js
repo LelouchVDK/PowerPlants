@@ -4,8 +4,14 @@ Mennesket.set("Hvilket af disse stoffer bliver transporteret rundt i vores krop 
 Mennesket.set("Hvad består blodkredsløbet af?", {correct: ["Hjerte, blod og blodårer"], incorrect: ["Blod, lunger og nerver", "Hjerne, hjerte og nerver", "Blod, lunger og muskler"], explanation: 'Blodkredsløbet består af hjertet, blodet og blodårerne. Hjertet fungerer som kredsløbets pumpe, som pumper blodet rundt i kroppen gennem blodårerne.'});
 Mennesket.set("Hvilke to typer blodårer består vores blodkredsløb af?", {correct: ['Pulsårer og vener'], incorrect: ['Røde og blå blodårer', 'Blodårer og luftårer.', 'Nerver og vener'], explanation: 'Blodkredsløbets blodårer hedder pulsårer og vener. Pulsårerne fører blodet fra hjertet og rundt i kroppen og er ofte tegnet med rødt på modeller. Venerne transporterer blodet fra kroppen tilbage til hjertet og er ofte tegnet med blåt på modeller.'});
 
-const solsystemet = new Map();
-solsystemet.set('Hvor mange planeter er der i vores solsystem?', {correct: [8], incorrect: [7, 9, 10]});
+const Jorden = new Map();
+Jorden.set('Hvor mange planeter er der i vores solsystem?', {correct: [8], incorrect: [7, 9, 10]});
+
+const topics = new Map();
+topics.set('Mennesket', Mennesket);
+topics.set('Jorden', Jorden);
+
+topics.get()
 
 let currentMap;
 let currentQ;
@@ -23,7 +29,10 @@ function questionTopic(questionMap) {
 
 }
 
-questionTopic(Mennesket);
+// Setting the topic
+let getQuizTopic = localStorage.currentSubject;
+let quizTopic = topics.get(getQuizTopic);
+questionTopic(quizTopic);
 
 options = currentMap.get(currentQ).correct.concat(currentMap.get(currentQ).incorrect);
 
