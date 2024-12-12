@@ -54,7 +54,12 @@ function setPlantImage(image){
 }
 
 function getGrid1(){
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    if (localStorage.getItem('grid1') === null){
+        localStorage.setItem('grid1', '../Images/Plants/Krukke.png');
+    }
+    else{
+        document.getElementById('grid1').src = localStorage.getItem('grid1');
+    }
 }
 
 function setGrid1(grid){
@@ -63,46 +68,80 @@ function setGrid1(grid){
 }
 
 function getGrid2(){
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    if (localStorage.getItem('grid2') === null){
+        localStorage.setItem('grid2', '../Images/Plants/Krukke.png');
+    }
+    else {
+        document.getElementById('grid2').src = localStorage.getItem('grid2');
+    }
 }
 
 function setGrid2(grid){
-    localStorage.setItem('grid1', grid);
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    localStorage.setItem('grid2', grid);
+    document.getElementById('grid2').src = localStorage.getItem('grid2');
 }
 
 function getGrid3(){
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    if (localStorage.getItem('grid3') === null){
+        localStorage.setItem('grid3', '../Images/Plants/Krukke.png');
+    }
+    else {
+        document.getElementById('grid3').src = localStorage.getItem('grid3');
+    }
 }
 
 function setGrid3(grid){
-    localStorage.setItem('grid1', grid);
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    localStorage.setItem('grid3', grid);
+    document.getElementById('grid3').src = localStorage.getItem('grid3');
 }
 
 function getGrid4(){
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    if (localStorage.getItem('grid4') === null){
+        localStorage.setItem('grid4', '../Images/Plants/Krukke.png');
+    }
+    else {
+        document.getElementById('grid4').src = localStorage.getItem('grid4');
+    }
 }
 
 function setGrid4(grid){
-    localStorage.setItem('grid1', grid);
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    localStorage.setItem('grid4', grid);
+    document.getElementById('grid4').src = localStorage.getItem('grid4');
 }
 
 function getGrid5(){
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    if (localStorage.getItem('grid5') === null){
+        localStorage.setItem('grid5', '../Images/Plants/Krukke.png');
+    }
+    else {
+        document.getElementById('grid5').src = localStorage.getItem('grid5');
+    }
 }
 
 function setGrid5(grid){
-    localStorage.setItem('grid1', grid);
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    localStorage.setItem('grid5', grid);
+    document.getElementById('grid5').src = localStorage.getItem('grid5');
 }
 
 function getGrid6(){
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    if (localStorage.getItem('grid6') === null){
+        localStorage.setItem('grid6', '../Images/Plants/Krukke.png');
+    }
+    else {
+        document.getElementById('grid6').src = localStorage.getItem('grid6');
+    }
 }
 
 function setGrid6(grid){
-    localStorage.setItem('grid1', grid);
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    localStorage.setItem('grid6', grid);
+    document.getElementById('grid6').src = localStorage.getItem('grid6');
+}
+
+function loadGrid() {
+    getGrid1();
+    getGrid2();
+    getGrid3();
+    getGrid4();
+    getGrid5();
+    getGrid6();
 }

@@ -10,20 +10,20 @@
     <title>Power Plants</title>
 </head>
 
-<body onload="getCurrentPoints(); getCurrentPlant(); getCurrentSubject(); loadGrid()">
+<body onload="getCurrentPoints(); getCurrentPlant(); getCurrentSubject(); loadGrid();">
 <header>
         <nav>
             <div class="points">    
                 <p>Vand: </p>
-                <p id="currentPoints">00</p>
+                <p id="currentPoints"></p>
             </div>
             <div class="plantName">
                 <p>Plante Navn: </p>
-                <p id="currentPlant">???</p>
+                <p id="currentPlant"></p>
             </div>
             <div class="subject">
                 <p>Emne: </p>
-                <p id="currentSubject">???</p>
+                <p id="currentSubject"></p>
             </div>
         </nav>
     </header>
@@ -33,31 +33,31 @@
     <a href="../Well/Well.html">
         <button class="button RightLink"><i class="fa-solid fa-arrow-right"></i></button>
     </a>
-<<<<<<< Updated upstream
-    <select class="plantSelector" id="imageSelector">
-            <option>Position 1</option>
-            <option>Position 2</option>
-            <option>Position 3</option>
-            <option>Position 4</option>
-            <option>Position 5</option>
-            <option>Position 6</option>
+
+    <select class="plantSelector" id="gridSelector">
+            <option value="1">Position 1</option>
+            <option value="2">Position 2</option>
+            <option value="3">Position 3</option>
+            <option value="4">Position 4</option>
+            <option value="5">Position 5</option>
+            <option value="6">Position 6</option>
         </select>
-    <button id="plant"><i class="fa-solid fa-seedling"></i></button>
-    <select class="removeSelector" id="imageSelector">
-            <option>Position 1</option>
-            <option>Position 2</option>
-            <option>Position 3</option>
-            <option>Position 4</option>
-            <option>Position 5</option>
-            <option>Position 6</option>
+    <button id="plant" onclick="plantPlant()"><i class="fa-solid fa-seedling"></i></button>
+    <select class="removeSelector" id="gridCleaner">
+            <option value="1">Position 1</option>
+            <option value="2">Position 2</option>
+            <option value="3">Position 3</option>
+            <option value="4">Position 4</option>
+            <option value="5">Position 5</option>
+            <option value="6">Position 6</option>
         </select>
     <button id="plant-remove"><i class="fas fa-random"></i></button>
     <div class="grid-container">
-        <div class="grid-box" id="grid1"><img src="amaryllis_3.png"></div>
-        <div class="grid-box" id="grid2"><img src="amaryllis_3.png"></div>
-        <div class="grid-box" id="grid3"><img src="amaryllis_3.png"></div>
-        <div class="grid-box" id="grid4"><img src="cactus_3.png"></div>
-        <div class="grid-box" id="grid5"><img src="cactus_3.png"></div>
-        <div class="grid-box" id="grid6"><img src="cactus_3.png"></div>
+        <div class="grid-box"><img id="grid1" src="../Images/Plants/Krukke.png"></div>
+        <div class="grid-box"><img id="grid2" src="../Images/Plants/Krukke.png"></div>
+        <div class="grid-box"><img id="grid3" src="../Images/Plants/Krukke.png"></div>
+        <div class="grid-box"><img id="grid4" src="../Images/Plants/Krukke.png"></div>
+        <div class="grid-box"><img id="grid5" src="../Images/Plants/Krukke.png"></div>
+        <div class="grid-box"><img id="grid6" src="../Images/Plants/Krukke.png"></div>
     </div>
 </body>

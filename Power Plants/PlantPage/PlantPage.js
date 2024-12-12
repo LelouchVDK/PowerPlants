@@ -10,13 +10,14 @@
         setCurrentSubject("Jorden");
     }
     currentProgress = 0;
-    currentPoints = 0;
+    currentPoints = 0;  
     setPlantProgress(currentProgress);
     setCurrentPoints(currentPoints);
 }
 
 
 function waterPlant() {
+    var image = document.getElementById('plantImage');
     var progress = document.getElementById('plantProgress');
     var points = document.getElementById('currentPoints');
     var currentPoints = parseInt(points.innerHTML);
