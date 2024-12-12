@@ -9,6 +9,7 @@ function getCurrentPoints(){
  
 function setCurrentPoints(points){
     localStorage.setItem('currentPoints', points);
+    getCurrentPoints();
 }
 
 function getCurrentPlant(){
@@ -17,7 +18,7 @@ function getCurrentPlant(){
 
 function setCurrentPlant(plant){
     localStorage.setItem('currentPlant', plant);
-    document.getElementById('currentPlant').innerHTML = localStorage.getItem('currentPlant');
+    getCurrentPlant();
 }
 
 function getCurrentSubject(){
@@ -26,7 +27,7 @@ function getCurrentSubject(){
 
 function setCurrentSubject(subject){
     localStorage.setItem('currentSubject', subject);
-    document.getElementById('currentSubject').innerHTML = localStorage.getItem('currentSubject');
+    getCurrentSubject();
 }
 
 function getPlantProgress(){
@@ -35,7 +36,7 @@ function getPlantProgress(){
 
 function setPlantProgress(progress){
     localStorage.setItem('plantProgress', progress);
-    document.getElementById('plantProgress').value = localStorage.getItem('plantProgress');
+    getPlantProgress();
 }
 
 function getPlantImage(){
@@ -49,7 +50,7 @@ function getPlantImage(){
 
 function setPlantImage(image){
     localStorage.setItem('plantImage', image);
-    // document.getElementById('plantImage').src = localStorage.getItem('plantImage');
+    getPlantImage();
 }
 
 function getGrid1(){
@@ -63,7 +64,7 @@ function getGrid1(){
 
 function setGrid1(grid){
     localStorage.setItem('grid1', grid);
-    document.getElementById('grid1').src = localStorage.getItem('grid1');
+    getGrid1();
 }
 
 function getGrid2(){
@@ -77,7 +78,7 @@ function getGrid2(){
 
 function setGrid2(grid){
     localStorage.setItem('grid2', grid);
-    document.getElementById('grid2').src = localStorage.getItem('grid2');
+    getGrid2();
 }
 
 function getGrid3(){
@@ -91,7 +92,7 @@ function getGrid3(){
 
 function setGrid3(grid){
     localStorage.setItem('grid3', grid);
-    document.getElementById('grid3').src = localStorage.getItem('grid3');
+    getGrid3();
 }
 
 function getGrid4(){
@@ -105,7 +106,7 @@ function getGrid4(){
 
 function setGrid4(grid){
     localStorage.setItem('grid4', grid);
-    document.getElementById('grid4').src = localStorage.getItem('grid4');
+    getGrid4();
 }
 
 function getGrid5(){
@@ -119,7 +120,7 @@ function getGrid5(){
 
 function setGrid5(grid){
     localStorage.setItem('grid5', grid);
-    document.getElementById('grid5').src = localStorage.getItem('grid5');
+    getGrid5()
 }
 
 function getGrid6(){
@@ -133,7 +134,7 @@ function getGrid6(){
 
 function setGrid6(grid){
     localStorage.setItem('grid6', grid);
-    document.getElementById('grid6').src = localStorage.getItem('grid6');
+    getGrid6();
 }
 
 function loadGrid() {
@@ -143,4 +144,22 @@ function loadGrid() {
     getGrid4();
     getGrid5();
     getGrid6();
+}
+
+function resetPlant() {
+    setCurrentPlant("");
+    setCurrentSubject("");
+    setCurrentPoints(0);
+    try {
+        setPlantProgress(0);    
+    }
+    catch (error) {
+        console.log(error);
+    }
+    try {
+        setPlantImage("../Images/Plants/Krukke.png");
+    }
+    catch (error) {
+        console.log(error);
+    }
 }

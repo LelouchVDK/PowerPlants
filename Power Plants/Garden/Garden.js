@@ -9,10 +9,7 @@ function plantPlant() {
             } else {
                 setGrid1("../Images/Plants/amaryllis_3.png");
             }
-            setCurrentPlant("");
-            setCurrentSubject("");
-            setPlantProgress(0);
-            setCurrentPoints(0);
+            resetPlant();
 
         } else if (selector.value === "2") {
             if (localStorage.getItem('currentPlant') === "Kaktus") {
@@ -20,10 +17,7 @@ function plantPlant() {
             } else {
                 setGrid2("../Images/Plants/amaryllis_3.png");
             }
-            setCurrentPlant("");
-            setCurrentSubject("");
-            setPlantProgress(0);
-            setCurrentPoints(0);
+            resetPlant();
             
         } else if (selector.value === "3") {
             if (localStorage.getItem('currentPlant') === "Kaktus") {
@@ -31,10 +25,7 @@ function plantPlant() {
             } else {
                 setGrid3("../Images/Plants/amaryllis_3.png");
             }
-            setCurrentPlant("");
-            setCurrentSubject("");
-            setPlantProgress(0);
-            setCurrentPoints(0);
+            resetPlant();
             
         } else if (selector.value === "4") {
             if (localStorage.getItem('currentPlant') === "Kaktus") {
@@ -42,10 +33,7 @@ function plantPlant() {
             } else {
                 setGrid4("../Images/Plants/amaryllis_3.png");
             }
-            setCurrentPlant("");
-            setCurrentSubject("");
-            setPlantProgress(0);
-            setCurrentPoints(0);
+            resetPlant();
             
         } else if (selector.value === "5") {
             if (localStorage.getItem('currentPlant') === "Kaktus") {
@@ -53,10 +41,7 @@ function plantPlant() {
             } else {
                 setGrid5("../Images/Plants/amaryllis_3.png");
             }
-            setCurrentPlant("");
-            setCurrentSubject("");
-            setPlantProgress(0);
-            setCurrentPoints(0);
+            resetPlant();
             
         } else if (selector.value === "6") {
             if (localStorage.getItem('currentPlant') === "Kaktus") {
@@ -64,10 +49,7 @@ function plantPlant() {
             } else {
                 setGrid6("../Images/Plants/amaryllis_3.png");
             }
-            setCurrentPlant("");
-            setCurrentSubject("");
-            setPlantProgress(0);
-            setCurrentPoints(0);
+            resetPlant();
         }
     }
     else {

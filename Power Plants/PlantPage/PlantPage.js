@@ -10,7 +10,7 @@
         setCurrentSubject("Jorden");
     }
     currentProgress = 0;
-    currentPoints = 0;  
+    currentPoints = 7;  
     setPlantProgress(currentProgress);
     setCurrentPoints(currentPoints);
 }
