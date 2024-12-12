@@ -9,7 +9,6 @@ function getCurrentPoints(){
  
 function setCurrentPoints(points){
     localStorage.setItem('currentPoints', points);
-    document.getElementById('currentPoints').innerHTML = localStorage.getItem('currentPoints');
 }
 
 function getCurrentPlant(){
@@ -50,7 +49,7 @@ function getPlantImage(){
 
 function setPlantImage(image){
     localStorage.setItem('plantImage', image);
-    document.getElementById('plantImage').src = localStorage.getItem('plantImage');
+    // document.getElementById('plantImage').src = localStorage.getItem('plantImage');
 }
 
 function getGrid1(){
