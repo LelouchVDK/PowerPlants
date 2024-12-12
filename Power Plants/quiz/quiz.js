@@ -5,7 +5,7 @@ Mennesket.set("Hvad består blodkredsløbet af?", {correct: ["Hjerte, blod og bl
 Mennesket.set("Hvilke to typer blodårer består vores blodkredsløb af?", {correct: ['Pulsårer og vener'], incorrect: ['Røde og blå blodårer', 'Blodårer og luftårer.', 'Nerver og vener'], explanation: 'Blodkredsløbets blodårer hedder pulsårer og vener. Pulsårerne fører blodet fra hjertet og rundt i kroppen og er ofte tegnet med rødt på modeller. Venerne transporterer blodet fra kroppen tilbage til hjertet og er ofte tegnet med blåt på modeller.'});
 
 const Jorden = new Map();
-Jorden.set('Hvor mange planeter er der i vores solsystem?', {correct: [8], incorrect: [7, 9, 10]});
+Jorden.set('Hvor mange planeter er der i vores solsystem?', {correct: [8], incorrect: [7, 9, 10], explanation: 'Der er 8 planeter i vores solsystem. Jorden, Mars, Venus, Saturn, Uranus, Jupiter, Merkur og Neptun. Pluto er en speciel lille fætter og tæller ikke med, da det er en dværgplanet.'});
 
 const topics = new Map();
 topics.set('Mennesket', Mennesket);

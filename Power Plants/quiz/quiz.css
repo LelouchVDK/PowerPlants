@@ -39,13 +39,24 @@
     border: 1px solid black;
 }
 
+#quit {
+    border: 3px solid green;
+    background-color: red;
+    font-size: 13px;
+    font-weight: bold;
+    color: pink;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    top: 1%;
+}
+
 body {
     background-color: lightskyblue;
     font-size: 50px;
 }
-
-/* Was an attempt to make button anchor fit button size
-.a {
-    size: 21.2px;
-}
-*/
