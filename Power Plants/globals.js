@@ -52,3 +52,57 @@ function setPlantImage(image){
     localStorage.setItem('plantImage', image);
     document.getElementById('plantImage').src = localStorage.getItem('plantImage');
 }
+
+function getGrid1(){
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function setGrid1(grid){
+    localStorage.setItem('grid1', grid);
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function getGrid2(){
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function setGrid2(grid){
+    localStorage.setItem('grid1', grid);
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function getGrid3(){
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function setGrid3(grid){
+    localStorage.setItem('grid1', grid);
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function getGrid4(){
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function setGrid4(grid){
+    localStorage.setItem('grid1', grid);
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function getGrid5(){
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function setGrid5(grid){
+    localStorage.setItem('grid1', grid);
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function getGrid6(){
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}
+
+function setGrid6(grid){
+    localStorage.setItem('grid1', grid);
+    document.getElementById('grid1').src = localStorage.getItem('grid1');
+}

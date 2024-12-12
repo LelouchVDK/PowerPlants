@@ -7,7 +7,7 @@
         setCurrentSubject("Mennesket");
     } else {
         setCurrentPlant("Amaryllis");
-        setCurrentSubject("Sol Systemet");
+        setCurrentSubject("Jorden");
     }
     currentProgress = 0;
     currentPoints = 0;
