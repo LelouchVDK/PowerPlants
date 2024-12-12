@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <script src="../globals.js"></script>
+    <script src="Garden.js"></script>
     <link rel="stylesheet" href="../roots.css">
     <link rel="stylesheet" href="Garden.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -9,10 +10,10 @@
     <title>Power Plants</title>
 </head>
 
-<body onload="getCurrentPoints(); getCurrentPlant(); getCurrentSubject()">
+<body onload="getCurrentPoints(); getCurrentPlant(); getCurrentSubject(); loadGrid()">
 <header>
         <nav>
-            <div class="points">
+            <div class="points">    
                 <p>Vand: </p>
                 <p id="currentPoints">00</p>
             </div>
@@ -32,6 +33,7 @@
     <a href="../Well/Well.html">
         <button class="button RightLink"><i class="fa-solid fa-arrow-right"></i></button>
     </a>
+<<<<<<< Updated upstream
     <select class="plantSelector" id="imageSelector">
             <option>Position 1</option>
             <option>Position 2</option>
@@ -51,11 +53,11 @@
         </select>
     <button id="plant-remove"><i class="fas fa-random"></i></button>
     <div class="grid-container">
-        <div><img src="amaryllis_3.png" style="width:100px;height:100px;"></div>
-        <div><img src="amaryllis_3.png" style="width:100px;height:100px;"></div>
-        <div><img src="amaryllis_3.png" style="width:100px;height:100px;"></div>
-        <div><img src="cactus_3.png" style="width:100px;height:100px;"></div>
-        <div><img src="cactus_3.png" style="width:100px;height:100px;"></div>
-        <div><img src="cactus_3.png" style="width:100px;height:100px;"></div>
+        <div class="grid-box" id="grid1"><img src="amaryllis_3.png"></div>
+        <div class="grid-box" id="grid2"><img src="amaryllis_3.png"></div>
+        <div class="grid-box" id="grid3"><img src="amaryllis_3.png"></div>
+        <div class="grid-box" id="grid4"><img src="cactus_3.png"></div>
+        <div class="grid-box" id="grid5"><img src="cactus_3.png"></div>
+        <div class="grid-box" id="grid6"><img src="cactus_3.png"></div>
     </div>
 </body>
