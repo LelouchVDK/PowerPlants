@@ -38,7 +38,9 @@ function getPlantProgress(){
 
 function setPlantProgress(progress){
     localStorage.setItem('plantProgress', progress);
-    getPlantProgress();
+    if (document.getElementById('plantProgress') != null) {
+        getPlantProgress();
+    }
 }
 
 function getPlantImage(){
@@ -52,7 +54,9 @@ function getPlantImage(){
 
 function setPlantImage(image){
     localStorage.setItem('plantImage', image);
-    getPlantImage();
+    if (document.getElementById('plantImage') != null) {
+        getPlantImage();
+    }
 }
 
 function getGrid1(){
@@ -152,16 +156,6 @@ function resetPlant() {
     setCurrentPlant("");
     setCurrentSubject("");
     setCurrentPoints(0);
-    try {
-        setPlantProgress(0);    
-    }
-    catch (error) {
-        console.log(error);
-    }
-    try {
-        setPlantImage("../Images/Plants/Krukke.png");
-    }
-    catch (error) {
-        console.log(error);
-    }
+    setPlantProgress(0);
+    setPlantImage("../Images/Plants/Krukke.png");
 }
