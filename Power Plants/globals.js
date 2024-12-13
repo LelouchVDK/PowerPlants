@@ -9,7 +9,9 @@ function getCurrentPoints(){
  
 function setCurrentPoints(points){
     localStorage.setItem('currentPoints', points);
-    getCurrentPoints();
+    if (document.getElementById('currentPoints') != null) {
+        getCurrentPoints();
+    }
 }
 
 function getCurrentPlant(){
