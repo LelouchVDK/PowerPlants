@@ -8,11 +8,12 @@ body {
   display: grid;
   position: absolute;
   height: 200px;
-  top: 55%;
-  right: 16.5%;
+  top: 60%;
+  right: 25%;
   align-content: center;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 70px 70px;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 80px 80px;
+  justify-content: space-evenly;
 }
 #plant {
     border: 3px solid midnightblue;
@@ -90,4 +91,5 @@ select.removeSelector{
 .grid-box img {
     width: 200px;
     height: 200px;
+    margin-top: 20px;
 }
