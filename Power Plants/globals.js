@@ -61,7 +61,7 @@ function setPlantImage(image){
 
 function getGrid1(){
     if (localStorage.getItem('grid1') === null){
-        localStorage.setItem('grid1', '../Images/Plants/Krukke.png');
+        localStorage.setItem('grid1', '../Images/Plants/hole.png');
     }
     else{
         document.getElementById('grid1').src = localStorage.getItem('grid1');
@@ -75,7 +75,7 @@ function setGrid1(grid){
 
 function getGrid2(){
     if (localStorage.getItem('grid2') === null){
-        localStorage.setItem('grid2', '../Images/Plants/Krukke.png');
+        localStorage.setItem('grid2', '../Images/Plants/hole.png');
     }
     else {
         document.getElementById('grid2').src = localStorage.getItem('grid2');
@@ -89,7 +89,7 @@ function setGrid2(grid){
 
 function getGrid3(){
     if (localStorage.getItem('grid3') === null){
-        localStorage.setItem('grid3', '../Images/Plants/Krukke.png');
+        localStorage.setItem('grid3', '../Images/Plants/hole.png');
     }
     else {
         document.getElementById('grid3').src = localStorage.getItem('grid3');
@@ -103,7 +103,7 @@ function setGrid3(grid){
 
 function getGrid4(){
     if (localStorage.getItem('grid4') === null){
-        localStorage.setItem('grid4', '../Images/Plants/Krukke.png');
+        localStorage.setItem('grid4', '../Images/Plants/hole.png');
     }
     else {
         document.getElementById('grid4').src = localStorage.getItem('grid4');
@@ -117,7 +117,7 @@ function setGrid4(grid){
 
 function getGrid5(){
     if (localStorage.getItem('grid5') === null){
-        localStorage.setItem('grid5', '../Images/Plants/Krukke.png');
+        localStorage.setItem('grid5', '../Images/Plants/hole.png');
     }
     else {
         document.getElementById('grid5').src = localStorage.getItem('grid5');
@@ -131,7 +131,7 @@ function setGrid5(grid){
 
 function getGrid6(){
     if (localStorage.getItem('grid6') === null){
-        localStorage.setItem('grid6', '../Images/Plants/Krukke.png');
+        localStorage.setItem('grid6', '../Images/Plants/hole.png');
     }
     else {
         document.getElementById('grid6').src = localStorage.getItem('grid6');
