@@ -39,16 +39,14 @@ options = currentMap.get(currentQ).correct.concat(currentMap.get(currentQ).incor
 let correctAnswer = currentMap.get(currentQ).correct;
 
 // Don't know why I made this a function
-function shuffler() {
-    let i = currentMap.size;
-    while (i < 1) {
-        let randomIndex = Math.floor(Math.random() * i);
-        [options[i], options[randomIndex]] = [options[randomIndex], options[i]];
-        i--;
-    }
-};
+//function shuffler() {
+for (let index = 3; index > 0; index--) {
+    const randomElement = Math.floor(Math.random() * (index + 1));
+    [options[index], options[randomElement]] = [options[randomElement], options[index]];
+}
+// }
 
-shuffler();
+//shuffler();
 
 //Adding the options to the HTML elements. 
 for (let index = 0; index < 4; index++) {
