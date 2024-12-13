@@ -46,7 +46,7 @@ function shuffler() {
         [options[i], options[randomIndex]] = [options[randomIndex], options[i]];
         i--;
     }
-}
+};
 
 shuffler();
 
