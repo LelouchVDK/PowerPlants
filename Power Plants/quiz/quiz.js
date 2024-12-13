@@ -7,6 +7,7 @@ Mennesket.set("Hvilke to typer blodårer består vores blodkredsløb af?", {corr
 const Jorden = new Map();
 Jorden.set('Hvor mange planeter er der i vores solsystem?', {correct: [8], incorrect: [7, 9, 10], explanation: 'Der er 8 planeter i vores solsystem. Jorden, Mars, Venus, Saturn, Uranus, Jupiter, Merkur og Neptun. Pluto er en speciel lille fætter og tæller ikke med, da det er en dværgplanet.'});
 
+
 const topics = new Map();
 topics.set('Mennesket', Mennesket);
 topics.set('Jorden', Jorden);
