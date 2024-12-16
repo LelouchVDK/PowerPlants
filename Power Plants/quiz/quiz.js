@@ -16,7 +16,7 @@ topics.set('Jorden', Jorden);
 
 topics.get()
 
-if (localStorage.getItem('currentSubject') == '') {
+if (localStorage.getItem('currentSubject') !== 'Mennesket' && localStorage.getItem('currentSubject') !== 'Jorden') {
     document.getElementById('quizWindow').style.display = 'none';
     document.getElementById('question').innerHTML = 'Vælg venligst en plante at gro';
 }
