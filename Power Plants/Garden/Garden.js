@@ -64,22 +64,22 @@ function removePlant() {
     var selector = document.getElementById('gridSelector');
     switch (selector.value) {
         case "1":
-            setGrid1("../Images/Plants/Krukke.png");
+            setGrid1("../Images/Plants/hole.png");
             break;
         case "2":
-            setGrid2("../Images/Plants/Krukke.png");
+            setGrid2("../Images/Plants/hole.png");
             break;
         case "3":
-            setGrid3("../Images/Plants/Krukke.png");
+            setGrid3("../Images/Plants/hole.png");
             break;
         case "4":
-            setGrid4("../Images/Plants/Krukke.png");
+            setGrid4("../Images/Plants/hole.png");
             break;
         case "5":
-            setGrid5("../Images/Plants/Krukke.png");
+            setGrid5("../Images/Plants/hole.png");
             break;
         case "6":
-            setGrid6("../Images/Plants/Krukke.png");
+            setGrid6("../Images/Plants/hole.png");
             break;
     }
 }
