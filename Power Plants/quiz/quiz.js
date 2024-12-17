@@ -18,7 +18,10 @@ Jorden.set('Hvor gammel er jorden?', {correct: ['Over 4,5 milliarder år'], inco
 Jorden.set('Hvor opstod det første liv på jorden?', {correct: ['I havet'], incorrect: ['I bjergene', 'I grotter', 'I himlen'], explanation: 'Livet opstod først i havet, og bestod af bittesmå bakterier.'});
 Jorden.set('Hvad er atmosfæren?', {correct: ['Et lag af luft omkring jorden'], incorrect: ['Et andet ord for solens lys', 'Den nederste del af havet', 'En bjergkæde'], explanation: 'Atmosfæren er det stykke af luft, som omkranser jorden. Vi lever i den nederste del af atmosfæren. Den beskytter os mod meteorer og giver os ilt, så vi kan trække vejret, hvilket vi er meget glade for at kunne, så vi ikke dør.'});
 Jorden.set('Hvor tyk er jordens atmosfære?', {correct: ['120 km'], incorrect: ['10 km', '50 km', '80 km'], explanation: 'Atmosfæren er 120 km tyk! Det er det luftlag, som omkranser jorden.'});
-Jorden.set('Hvad er drivhuseffekten?', {correct: 'Atmosfæren holder på varmen fra solen', incorrect: ['Planter gror bedre hvor det er varmt', 'Det bliver varmere jo mere glas et hus har', 'Planter smager bedre når de gror i drivhus'], explanation: 'Atmosfæren fungerer som glasset i et drivhus. Solens stråler kommer igennem og varmer jorden op, men atmosfæren sørger for, at varmen ikke slipper ud igen. Uden den ville jorden være -18 °C'});
+Jorden.set('Hvad er drivhuseffekten?', 
+    {correct: ['Atmosfæren holder på varmen fra solen'], 
+    incorrect: ['Planter gror bedre hvor det er varmt', 'Det bliver varmere jo mere glas et hus har', 'Planter smager bedre når de gror i drivhus'], 
+    explanation: 'Atmosfæren fungerer som glasset i et drivhus. Solens stråler kommer igennem og varmer jorden op, men atmosfæren sørger for, at varmen ikke slipper ud igen. Uden den ville jorden være -18 °C'});
 
 const topics = new Map();
 topics.set('Mennesket', Mennesket);
